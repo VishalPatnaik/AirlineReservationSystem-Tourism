@@ -1,0 +1,1133 @@
+
+<!doctype html>
+
+<head>
+  
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main1.css">
+    <link rel="stylesheet" type="text/css" href="F46CEEC11A6E3A62A.css">
+
+   
+    <link rel="mask-icon" sizes="any" href="favicon.svg" color="#df173b">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+
+   
+    
+   
+
+ 
+    <script src="j2.js"></script>
+
+
+</head>
+<body ng-controller="CoreCtrl" data-vx-common-window >
+
+    <div data-vx-common-app-overlay class="app-overlay"></div>
+
+    <div id="travel-advisory" data-vx-common-travel-advisory></div>
+
+    <div id="change-guider" data-vx-common-change-guider></div>
+
+    <header data-ng-cloak data-vx-common-header role="banner" class="banner" ng-class="{'is-nav-expanded-active': header.dropdown.navActive, 'is-nav-elevate-active': header.elevateLogin}" ng-show="header.visible">
+         
+        <nav class="navbar__main cf">
+		<ul class="navlist--main cf" ng-hide="header.breakpoint === 'small'">
+                <li><a href="home.html" target="_self">Home</a></li>
+                
+            </ul>
+            <ul class="navlist--main cf" ng-hide="header.breakpoint === 'small'">
+                <li><a href="flight.html" target="_self">Book</a></li>
+                <li><a href="manage.html"  target="_self">Manage</a></li>
+            </ul>
+            <ul class="navlist--sub cf" ng-hide="header.breakpoint === 'small' || header.breakpoint === 'medium'">
+                
+               
+                <li><a href="where.html" target="_self">Where We Fly</a></li>
+                <li><a href="fees.html" target="_self">Fees</a></li>
+                <li><a href="guide.html" target="_self">Tourist Guide</a></li>
+                
+            </ul>
+			<div class="navbar__right cf">
+                
+                <div class="navbar__elevate-nav" ng-switch="header.mustShowElevateTicker">
+                    <span class="elevate-nav--logged-out cf" ng-switch-when="false">
+                        <a href="main.html" class="elevate-nav__link elevate-nav__link--sign-in icon-elevate-small" data-vx-e2e-header-signin="" target="_self">Sign In</a>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+			
+        </nav>
+       
+  
+</header>
+</div>
+</div>
+</div>
+
+
+        <div role="main" class="content">
+<!-- vx-header-normal-item-msg -->
+
+<div class="header-medium">
+	<div class="wrap">		
+		<h1 class="heading">Fees</h1>
+		
+		
+	</div>
+</div>
+<div class="spacer" style="height:60px; padding-top:20">
+  <div class="line"></div>
+</div>
+
+
+<div class="header-medium">
+	<div class="wrap">		
+		<h1 class="heading">Reservations</h1>
+		
+		
+	</div>
+</div>
+
+
+<div class="wrap" id="reservations">
+
+<div class="header-normal">
+  <div class="wrap">
+   
+    <p class="subheading">Here’s a fee guide for reservation updates like changing or canceling flights, bringing pets, and flying standby.</p>
+  </div>
+</div>
+
+  <div class="table-fees">
+    <div class="container">
+     <table>
+          <thead>
+            <tr>
+              <th class="col first">&nbsp;<br/>&nbsp;<br/>Fee</th>
+              <th class="col second">&nbsp;<br/>&nbsp;<br/>Main Cabin</th>
+              <th class="col third">&nbsp;<br/>Main Cabin <br/>Refundable</th>
+              <th class="col fourth">&nbsp;<br/>Main Cabin<br/>Select</th>
+              <th class="col fifth">Main Cabin<br/>Select<br/>Refundable</th>
+              <th class="col sixth">&nbsp;<br/>&nbsp;<br/>First Class</th>
+              <th class="col seventh">&nbsp;<br/>First Class<br/>Refundable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col first">
+<br/>Change of Reservation Fee - Western Region (within DEN, LAS, LAX, PDX, PSP, PVR, SAN, SEA, SFO, SJD only)*¹              </td>
+              <td class="col second">
+$100              </td>
+              <td class="col third">
+$0              </td>
+              <td class="col fourth">
+$100              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$100              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Change of Reservation Fee - Long and Medium Haul Markets (AUS, CUN, MCO,<br/>FLL, HNL, OGG, ORD, IAD, DCA, BOS, JFK, EWR, DAL, MSY, BNA, RDU, BWI,<br/>KOA, PHL)*²              </td>
+              <td class="col second">
+$150              </td>
+              <td class="col third">
+$0              </td>
+              <td class="col fourth">
+$150              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$150              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Cancellation of Reservation Fee - Western Region (within DEN, LAS, LAX, PDX, PSP, PVR, SAN, SEA, SFO, SJD only)*³              </td>
+              <td class="col second">
+$100              </td>
+              <td class="col third">
+$0              </td>
+              <td class="col fourth">
+$100              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$100              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Cancellation of Reservation Fee - Long and Medium Haul Markets (AUS, CUN, MCO,<br/>FLL, HNL, OGG, ORD, IAD, DCA, BOS, JFK, EWR, DAL, MSY, BNA, RDU, BWI,<br/>KOA, PHL)*⁴              </td>
+              <td class="col second">
+$150              </td>
+              <td class="col third">
+$0              </td>
+              <td class="col fourth">
+$150              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$150              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Elevate Redeposit Fee*              </td>
+              <td class="col second">
+$100              </td>
+              <td class="col third">
+$100              </td>
+              <td class="col fourth">
+$100              </td>
+              <td class="col fifth">
+$100              </td>
+              <td class="col sixth">
+$100              </td>
+              <td class="col seventh">
+$100              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Unaccompanied Minors              </td>
+              <td class="col second">
+$25 for non-stop/direct flights<br/>$50 for connecting flights.              </td>
+              <td class="col third">
+$25 for non-stop/direct flights<br/>$50 for connecting flights.              </td>
+              <td class="col fourth">
+$25 for non-stop/direct flights<br/>$50 for connecting flights.              </td>
+              <td class="col fifth">
+$25 for non-stop/direct flights<br/>$50 for connecting flights.              </td>
+              <td class="col sixth">
+$25 for non-stop/direct flights<br/>$50 for connecting flights.              </td>
+              <td class="col seventh">
+$25 for non-stop/direct flights<br/>$50 for connecting flights.              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Pet Traveling in Main Cabin       </td>
+              <td class="col second">
+$100              </td>
+              <td class="col third">
+$100              </td>
+              <td class="col fourth">
+Not Permitted              </td>
+              <td class="col fifth">
+Not Permitted              </td>
+              <td class="col sixth">
+Not Permitted              </td>
+              <td class="col seventh">
+Not Permitted              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Same Day Travel Change               </td>
+              <td class="col second">
+$25-$50<br/>based on  flight              </td>
+              <td class="col third">
+$25-$50<br/>based on flight              </td>
+              <td class="col fourth">
+$25-$50<br/>based on flight              </td>
+              <td class="col fifth">
+$25-$50<br/>based on flight              </td>
+              <td class="col sixth">
+$25-$50<br/>based on flight              </td>
+              <td class="col seventh">
+$25-$50<br/>based on flight              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Unconfirmed Standby Fee             </td>
+              <td class="col second">
+$0              </td>
+              <td class="col third">
+$0              </td>
+              <td class="col fourth">
+$0              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Call Center Reservation Fee*              </td>
+              <td class="col second">
+$15              </td>
+              <td class="col third">
+$15              </td>
+              <td class="col fourth">
+$15              </td>
+              <td class="col fifth">
+$15              </td>
+              <td class="col sixth">
+$15              </td>
+              <td class="col seventh">
+$15              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Mailed Itinerary*              </td>
+              <td class="col second">
+$20              </td>
+              <td class="col third">
+$20              </td>
+              <td class="col fourth">
+$20              </td>
+              <td class="col fifth">
+$20              </td>
+              <td class="col sixth">
+$20              </td>
+              <td class="col seventh">
+$20              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Power Trip Package*²              </td>
+              <td class="col second">
+$39-$79<br/>based on flight              </td>
+              <td class="col third">
+N/A              </td>
+              <td class="col fourth">
+N/A              </td>
+              <td class="col fifth">
+N/A              </td>
+              <td class="col sixth">
+N/A              </td>
+              <td class="col seventh">
+N/A              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Dibs on Preferred Seats*³              </td>
+              <td class="col second">
+$10-$40<br/>based on flight              </td>
+              <td class="col third">
+N/A              </td>
+              <td class="col fourth">
+N/A              </td>
+              <td class="col fifth">
+N/A              </td>
+              <td class="col sixth">
+N/A              </td>
+              <td class="col seventh">
+N/A              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Plans Change Pass*⁴              </td>
+              <td class="col second">
+$25              </td>
+              <td class="col third">
+N/A              </td>
+              <td class="col fourth">
+N/A              </td>
+              <td class="col fifth">
+N/A              </td>
+              <td class="col sixth">
+N/A              </td>
+              <td class="col seventh">
+N/A              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Priority Security and Boarding*⁵              </td>
+              <td class="col second">
+$15-$19<br/>based on flight              </td>
+              <td class="col third">
+$15-$19<br/>based on flight              </td>
+              <td class="col fourth">
+No Fee              </td>
+              <td class="col fifth">
+No Fee              </td>
+              <td class="col sixth">
+No Fee              </td>
+              <td class="col seventh">
+No Fee              </td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  </div>
+  <div class="spacer" style="height:20px; padding-top:10">
+    <div class="line"></div>
+  </div>
+  <div class="text-footer">
+    <div class="wrap">
+      <div class="content"><p>*For guests departing from Mexico to the United States, additional charges (like baggage fees) are published in U.S. dollars and will fluctuate based on the Mexican currency exchange rate. Also, an 11-16% tax is assessed on these additional charges.</p>
+
+<p>&sup1;Tickets purchased from Vol En Avion through our Reservation Contact Center will cost an additional $20 per guest per itinerary. Any added cost associated with purchasing tickets from Vol En Avion through our reservation call center will be non-refundable.</p>
+
+<p>&sup2;Power Trip is available for $39-79 at time of main cabin booking with 24 hours advanced purchase of departure per guest per origin and destination, pricing varies based on haul.&nbsp;Prices are subject to change. Power Trip is non-refundable. Guests who purchase Power Trip will receive one checked bag, access to priority security and boarding, a plans change pass, and dibs on a preferred seat (based on availability). Power Trip cannot be used on Elevate reward flights or partner redemption booking. When changing a flight with the Plans Change Pass, the Power Trip package will be transferred to the new flight reservation, preferred seats are subject to availability. Not eligible for purchase with Elevate points or for Elevate points earning.</p>
+
+
+<p>Power Trip package fees paid are only refundable within the first 24 hours of making your reservation if purchased at the time of booking. If you cancel your reservation after 24 hours, Power Trip package fees are non-refundable and non-transferable to other passengers or new bookings.</p>
+
+<p>In&nbsp;the event of a flight cancellation by Vol En Avion, or involuntary denied boarding, Vol En Avion will at the guest&#39;s request provide a credit to Travel Bank or refund (at the guest&#39;s option), as described below.</p>
+
+<ul>
+	<li>If the reservation is totally unused, the full amount as well as all ancillary fees will be credited to a Travel Bank or refunded (with no service charge or refund penalty); or&nbsp;</li>
+	<li>If the reservation is partially used, the applicable fare for the unused segment/s and all unused ancillary fees will be credited to a Travel Bank or refunded.</li>
+</ul>
+
+<p>&sup3;Dibs on Preferred seating towards the front of the main cabin is available for purchase during the booking process for an additional fee ranging from $10-$40 per seat, per flight segment. Preferred seats are free for main cabin refundable, and Vol En Avion Mileage Plan MVP, MVP Gold and MVP Gold 75K members. Seats are limited, subject to availability, and may not be available on all flights. Prices are subject to change. Guests that purchase a preferred seat on thru flights (a one-way flight with a stop between the origin and destination on the same plane) pay for one flight segment for the thru flight. Guests that purchase preferred seating on connecting flights, where the guest is required to change planes, pay for each flight segment (i.e., each plane change). Preferred seats do not include priority security and boarding unless purchased separately. Not eligible for purchase with Elevate points or for Elevate points earning.&nbsp;</p>
+
+<p>⁴Plans Change Pass (change fee waiver) is available for a one-time purchase of $25 per&nbsp;guest&nbsp;at time of main cabin booking with 24 hours advanced purchase of departure, per itinerary which allows unlimited no-fee changes to flight date, time, origin and destination of the purchased flight in compliance with Vol En Avion Contract of carriage(Domestic U.S. Travel) and the International Contract of Carriage(International Travel). Fee waiver does not apply for traveler name change requests and cabin change requests. When travel is changed up to the scheduled flight departure time, the Plans Change Pass waives the flight change fee ranging from $100-$150 (based on haul) each time a change is made to an itinerary. Guest must pay any increase in fare, if applicable. Prices are subject to change. The Plans Change Pass cannot be used on Elevate reward flights or Elevate partner redemption bookings. Not eligible for purchase with Elevate points or for Elevate points earning.</p>
+
+<p>The Plans Change Pass is only refundable within the first 24 hours of making your reservation if purchased at the time of booking. After 24 hours of booking, the Plans Change pass is non-refundable, non-transferable to other passengers or new bookings and cannot be applied when canceling a reservation.</p>
+
+<p>⁵Priority Security and Boarding is available for $15 - $19, based on flight per guest per origin and destination, must be purchased before the check-in cut off time &ndash; 30 minutes before your flight departure (without checked bags) and 45 minutes prior to departure (with checked bags). Includes airport TSA security line access to the &ldquo;Priority&rdquo; or &ldquo;First or Business Class&rdquo; lanes (where available, certain airports such as LAX/OGG/PVR/CUN/SJD/HNL/KOA/IND/MSY are not eligible, and EWR has limited availability) and a &ldquo;priority&rdquo; boarding group at the airport gate (the first main cabin boarding group after Vol En Avion Mileage Plan elite members and Vol En Avion Visa Signature credit card holders). Prices are subject to change. Not eligible for purchase with Elevate points or for Elevate points earning. Priority security and boarding fees paid are only refundable within the first 24 hours of making your reservation if purchased at the time of booking. If you cancel your reservation or separately purchase priority security and boarding more than 24 hours after booking, priority security and boarding fees are non-refundable and non-transferable to other passengers or new bookings. If canceled by Vol En Avion, the value of the priority security and boarding fee will be refunded to the original form of payment.&nbsp;</p>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="header-medium">
+	<div class="wrap">		
+		<h1 class="heading">Baggage</h1>
+		
+		
+	</div>
+</div>
+
+
+<div class="wrap" id="baggage">
+
+<div class="header-normal">
+  <div class="wrap">
+    
+    <p class="subheading">Check out fees for checking bags of all sizes on Vol En Avion flights.</p>
+  </div>
+</div>
+
+  <div class="table-fees">
+    <div class="container">
+     <table>
+          <thead>
+            <tr>
+              <th class="col first">&nbsp;<br/>&nbsp;<br/>Fee</th>
+              <th class="col second">&nbsp;<br/>&nbsp;<br/>Main Cabin</th>
+              <th class="col third">&nbsp;<br/>Main Cabin <br/>Refundable</th>
+              <th class="col fourth">&nbsp;<br/>Main Cabin<br/>Select</th>
+              <th class="col fifth">Main Cabin<br/>Select<br/>Refundable</th>
+              <th class="col sixth">&nbsp;<br/>&nbsp;<br/>First Class</th>
+              <th class="col seventh">&nbsp;<br/>First Class<br/>Refundable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col first">
+1st Checked bag<br/>        </td>
+              <td class="col second">
+$25              </td>
+              <td class="col third">
+No Fee              </td>
+              <td class="col fourth">
+No Fee              </td>
+              <td class="col fifth">
+No Fee              </td>
+              <td class="col sixth">
+No Fee              </td>
+              <td class="col seventh">
+No Fee              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+2nd Checked bag<br/>             </td>
+              <td class="col second">
+$25              </td>
+              <td class="col third">
+$25              </td>
+              <td class="col fourth">
+$25              </td>
+              <td class="col fifth">
+$25              </td>
+              <td class="col sixth">
+No Fee              </td>
+              <td class="col seventh">
+No Fee              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+3rd-10th Checked Bag (Each)<br/>              </td>
+              <td class="col second">
+$25              </td>
+              <td class="col third">
+$25              </td>
+              <td class="col fourth">
+$25              </td>
+              <td class="col fifth">
+$25              </td>
+              <td class="col sixth">
+$25              </td>
+              <td class="col seventh">
+$25              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+<b>International</b>              </td>
+              <td class="col second">
+              </td>
+              <td class="col third">
+              </td>
+              <td class="col fourth">
+              </td>
+              <td class="col fifth">
+              </td>
+              <td class="col sixth">
+              </td>
+              <td class="col seventh">
+              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+1st Checked bag<br/>             </td>
+              <td class="col second">
+$25              </td>
+              <td class="col third">
+No Fee              </td>
+              <td class="col fourth">
+No Fee              </td>
+              <td class="col fifth">
+No Fee              </td>
+              <td class="col sixth">
+No Fee              </td>
+              <td class="col seventh">
+No Fee              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+2nd Checked bag<br/>          </td>
+              <td class="col second">
+$25              </td>
+              <td class="col third">
+$25              </td>
+              <td class="col fourth">
+$25              </td>
+              <td class="col fifth">
+$25              </td>
+              <td class="col sixth">
+No Fee              </td>
+              <td class="col seventh">
+No Fee              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+3rd-10th Checked Bag (Each)<br/>    </td>
+              <td class="col second">
+$25              </td>
+              <td class="col third">
+$25              </td>
+              <td class="col fourth">
+$25              </td>
+              <td class="col fifth">
+$25              </td>
+              <td class="col sixth">
+$25              </td>
+              <td class="col seventh">
+$25              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+<b>Oversized</b>              </td>
+              <td class="col second">
+              </td>
+              <td class="col third">
+              </td>
+              <td class="col fourth">
+              </td>
+              <td class="col fifth">
+              </td>
+              <td class="col sixth">
+              </td>
+              <td class="col seventh">
+              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Overweight baggage<br/>(51-70 lbs)<br/>1st through 10th bag<br/>In addition to checked bag fee. <br/>       </td>
+              <td class="col second">
+$50              </td>
+              <td class="col third">
+$50              </td>
+              <td class="col fourth">
+$50              </td>
+              <td class="col fifth">
+$50              </td>
+              <td class="col sixth">
+$50              </td>
+              <td class="col seventh">
+$50              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Overweight baggage<br/>(71-100 lbs)<br/>1st through 10th bag<br/>In addition to checked bag fee. <br/>    </td>
+              <td class="col second">
+$100              </td>
+              <td class="col third">
+$100              </td>
+              <td class="col fourth">
+$100              </td>
+              <td class="col fifth">
+$100              </td>
+              <td class="col sixth">
+$100              </td>
+              <td class="col seventh">
+$100              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Oversized baggage<br/>(Exceeding 62 linear inches)<br/>In addition to checked bag fee.<br/>       </td>
+              <td class="col second">
+$75              </td>
+              <td class="col third">
+$75              </td>
+              <td class="col fourth">
+$75              </td>
+              <td class="col fifth">
+$75              </td>
+              <td class="col sixth">
+$75              </td>
+              <td class="col seventh">
+$75              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+<b>Miscellaneous</b>              </td>
+              <td class="col second">
+              </td>
+              <td class="col third">
+              </td>
+              <td class="col fourth">
+              </td>
+              <td class="col fifth">
+              </td>
+              <td class="col sixth">
+              </td>
+              <td class="col seventh">
+              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Sporting Equipment<br/>(Bicycles, Surfboards, etc.)<br/> </td>
+              <td class="col second">
+$50              </td>
+              <td class="col third">
+$50              </td>
+              <td class="col fourth">
+$50              </td>
+              <td class="col fifth">
+$50              </td>
+              <td class="col sixth">
+$50              </td>
+              <td class="col seventh">
+$50              </td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  </div>
+  <div class="spacer" style="height:20px; padding-top:10">
+    <div class="line"></div>
+  </div>
+  <div class="text-footer">
+    <div class="wrap">
+      <div class="content"><p>*For guests departing from Mexico to the United States, additional charges at the airport (like baggage fees) are charged in Mexican pesos but valued in U.S. dollars and will fluctuate based on the Mexican currency exchange rate. Also, an 11-16% tax is assessed on these additional charges. Please note cash is not accepted at any of our Mexico stations.</p>
+
+<p>Vol En Avion Domestic and International Guests are welcome to bring aboard one carry-on item up to 30 pounds and one (1) personal item. Main Cabin Guests are invited to check one (1) up to ten (10) bags up to 50 pounds for a fee of $25 each. Main Cabin Select Guests and Guests who purchase the fully refundable Main Cabin fare are invited to check one (1) bag up to 50 pounds free of charge and nine (9) more up to 50 pounds for a fee of $25 each. First Class Cabin guests are welcome to check two (2) bags up to 50 pounds free of charge and eight (8) more up to 50 pounds for $25 each. Prices are subject to change. Must be purchased and checked-in 45 minutes prior to departure.&nbsp;Any unused bag fees may be cancelled and refunded at any time to original form of payment.&nbsp;&nbsp;Fees apply to standard size bags and overweight size fees apply.&nbsp;</p>
+
+<p>During airport check-in, Vol En Avion Mileage Plan Elite members receive 2 free checked bags for themselves and up to six additional guests on the same reservation. Vol En Avion Visa Signature and Vol En Avion Visa Business cardholders receive 1 free checked bag for themselves and up to 6 additional guests on the reservation. Bag fees are not eligible for purchase with Elevate points or for Elevate points earning.</p>
+
+<p>Las tarifas por equipaje no son elegibles para la compra con puntos Elevate o para ganar puntos Elevate.&nbsp;</p>
+
+<p>*Para los pasajeros saliendo de M&eacute;xico a los Estados Unidos, los cargos adicionales en el aeropuerto se pagan en pesos mejicanos, pero valorados en d&oacute;lares estadounidenses y fluctuar&aacute;n basados en el tipo de cambio de la moneda mexicana. Estos cargos incluyen un impuesto de 11%-16%. Por favor, tenga en cuenta que no todas nuestras estaciones en M&eacute;xico aceptan efectivo.</p>
+
+<p>Los pasajeros de Vol En Avion, para vuelos nacionales e internacionales, pueden llevar a bordo&nbsp; un elemento de equipaje de hasta 30 libras (13 Kilogramos) y un (1) art&iacute;culo personal. Los pasajeros de Main Cabin Select pueden despachar entre un (1) hasta diez (10) maletas de hasta 50 libras (23 kilogramos) por un precio de $ 25 cada una. Los pasajeros de Main Cabin Select y clientes que compren la tarifa de Cabina Principal pueden despachar una (1) maleta de hasta 50 libras (23 kilogramos) de forma gratuita y nueve maletas (9) m&aacute;s de un m&aacute;ximo de 50 libras (23 kilogramos) por un precio de $ 25 cada uno. Los pasajeros de Primera Clase pueden despachar dos (2) maletas de hasta 50 libras (23 kilogramos) de forma gratuita y ocho maletas (8) m&aacute;s de un m&aacute;ximo de 50 libras (23 kilogramos) por $ 25 cada uno. Los precios est&aacute;n sujetos a cambios. Debe adquirirse y despacharse hasta 45 minutos antes de la salida. Cualquier cargo por equipaje no utilizado puede ser cancelado y devuelto en cualquier momento a la forma original de pago. Estas tarifas aplican para maletas de tama&ntilde;o est&aacute;ndar y tarifas por sobrepeso pueden aplicar.</p>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="header-medium">
+	<div class="wrap">		
+		<h1 class="heading">Amenities</h1>
+		
+		
+	</div>
+</div>
+
+
+<div class="wrap" id="amenities">
+
+<div class="header-normal">
+  <div class="wrap">
+    
+    <p class="subheading">See what’s served a la carte on our flights, including on-demand food and drinks, in-flight WiFi, movies and TV*.</p>
+  </div>
+</div>
+
+
+  <div class="table-fees">
+    <div class="container">
+     <table>
+          <thead>
+            <tr>
+              <th class="col first">&nbsp;<br/>&nbsp;<br/>Fee</th>
+              <th class="col second">&nbsp;<br/>&nbsp;<br/>Main Cabin</th>
+              <th class="col third">&nbsp;<br/>Main Cabin <br/>Refundable</th>
+              <th class="col fourth">&nbsp;<br/>Main Cabin<br/>Select</th>
+              <th class="col fifth">Main Cabin<br/>Select<br/>Refundable</th>
+              <th class="col sixth">&nbsp;<br/>&nbsp;<br/>First Class</th>
+              <th class="col seventh">&nbsp;<br/>First Class<br/>Refundable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col first">
+Vol En Avion Headsets*              </td>
+              <td class="col second">
+$3              </td>
+              <td class="col third">
+$3              </td>
+              <td class="col fourth">
+$0              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Full-Length Movies*              </td>
+              <td class="col second">
+$0              </td>
+              <td class="col third">
+$0              </td>
+              <td class="col fourth">
+$0              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+On demand TV              </td>
+              <td class="col second">
+$0              </td>
+              <td class="col third">
+$0              </td>
+              <td class="col fourth">
+$0              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Gogo Inflight Internet¹              </td>
+              <td class="col second">
+$4.95-$59.95              </td>
+              <td class="col third">
+$4.95-$59.95              </td>
+              <td class="col fourth">
+$4.95-$59.95              </td>
+              <td class="col fifth">
+$4.95-$59.95              </td>
+              <td class="col sixth">
+$4.95-$59.95              </td>
+              <td class="col seventh">
+$4.95-$59.95              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+ViaSat Inflight Internet Service¹              </td>
+              <td class="col second">
+$5.99 - $24.99              </td>
+              <td class="col third">
+$5.99 - $24.99              </td>
+              <td class="col fourth">
+$5.99 - $24.99              </td>
+              <td class="col fifth">
+$5.99 - $24.99              </td>
+              <td class="col sixth">
+$5.99 - $24.99              </td>
+              <td class="col seventh">
+$5.99 - $24.99              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Free Chat™*               </td>
+              <td class="col second">
+$0              </td>
+              <td class="col third">
+$0              </td>
+              <td class="col fourth">
+$0              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Fresh Food (i.e. Sandwiches, Salads)*              </td>
+              <td class="col second">
+$4-$9              </td>
+              <td class="col third">
+$4-$9              </td>
+              <td class="col fourth">
+$0 or $4-$10 for select items              </td>
+              <td class="col fifth">
+$0 or $4-$10 for select items              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Snacks (i.e. Chips, Cookies)*              </td>
+              <td class="col second">
+$3-$5              </td>
+              <td class="col third">
+$3-$5              </td>
+              <td class="col fourth">
+$0 or $3-$5 for select items              </td>
+              <td class="col fifth">
+$0 or $3-$5 for select items              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Alcoholic Drinks (i.e Beer, Wine, Spirits)*              </td>
+              <td class="col second">
+$6-$8              </td>
+              <td class="col third">
+$6-$8              </td>
+              <td class="col fourth">
+$0 or $6-$14 for select items              </td>
+              <td class="col fifth">
+$0 or $6-$14 for select items              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Premium Non-Alcoholic Drinks (i.e. Honest Tea, Premium Teas)*              </td>
+              <td class="col second">
+$2-$3              </td>
+              <td class="col third">
+$2-$3              </td>
+              <td class="col fourth">
+$0              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+On The House Drinks (i.e. Coke, Sprite, Orange Juice, Coffee)*              </td>
+              <td class="col second">
+$0              </td>
+              <td class="col third">
+$0              </td>
+              <td class="col fourth">
+$0              </td>
+              <td class="col fifth">
+$0              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Pillows & Blankets*²              </td>
+              <td class="col second">
+Not Available              </td>
+              <td class="col third">
+Not Available              </td>
+              <td class="col fourth">
+Not Available              </td>
+              <td class="col fifth">
+Not Available              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Alaska Lounge Pass - Los Angeles (LAX)<br/>   </td>
+              <td class="col second">
+$45              </td>
+              <td class="col third">
+$45              </td>
+              <td class="col fourth">
+$45              </td>
+              <td class="col fifth">
+$45              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Clubhouse Pass - Virgin Atlantic, San Francisco (SFO)<br/> </td>
+              <td class="col second">
+Not Available              </td>
+              <td class="col third">
+Not Available              </td>
+              <td class="col fourth">
+$40              </td>
+              <td class="col fifth">
+$40              </td>
+              <td class="col sixth">
+$40              </td>
+              <td class="col seventh">
+$40              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Clubhouse Pass - Virgin Atlantic, Washington DC (IAD)<br/>               </td>
+              <td class="col second">
+Not Available              </td>
+              <td class="col third">
+Not Available              </td>
+              <td class="col fourth">
+$45              </td>
+              <td class="col fifth">
+$45              </td>
+              <td class="col sixth">
+$45              </td>
+              <td class="col seventh">
+$45              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Alaska Lounge Pass - all locations except LAX airport. </td>
+              <td class="col second">
+$45              </td>
+              <td class="col third">
+$45              </td>
+              <td class="col fourth">
+$45              </td>
+              <td class="col fifth">
+$45              </td>
+              <td class="col sixth">
+$0              </td>
+              <td class="col seventh">
+$0              </td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  </div>
+  <div class="spacer" style="height:20px; padding-top:10">
+    <div class="line"></div>
+  </div>
+ </div>
+
+ 
+<div role="main" class="content">
+
+<div class="header-medium">
+	<div class="wrap">		
+		<h2 class="heading">Upgrades</h2>
+	</div>
+</div>
+<div class="wrap" id="upgrades">
+
+<div class="header-normal">
+  <div class="wrap">
+   
+    <p class="subheading">Stay updated on upgrades, whether they’re online, at the airport ticket counter, or while you’re onboard. Grab a seat in Main Cabin Select up to 24 hours before departure, or in First Class up to 6 hours before departure.</p>
+  </div>
+</div>
+
+  <div class="table-column-two">
+    <div class="container">
+     <table>
+          <thead>
+            <tr>
+              <th class="col first">Upgrade</th>
+              <th class="col second">Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col first">
+Main Cabin to Main Cabin Select*               </td>
+              <td class="col second">
+$39 - $199              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Main Cabin Select to First Class*               </td>
+              <td class="col second">
+$70 - $240              </td>
+            </tr>
+            <tr>
+              <td class="col first">
+Main Cabin to First Class*               </td>
+              <td class="col second">
+$99 - $399              </td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  </div>
+  <div class="spacer" style="height:20px; padding-top:10">
+    <div class="line"></div>
+  </div>
+  <div class="text-footer">
+    <div class="wrap">
+      <div class="content"><p>*For guests departing from Mexico to the United States, additional charges (like baggage fees) are published in U.S. dollars and will fluctuate based on the Mexican currency exchange rate. Also, an 11-16% tax is assessed on these additional charges.</p>
+
+<p>Tickets purchased from Vol En Avion through our Reservation Contact Center will cost an additional $20 per guest per itinerary. Any added cost associated with purchasing tickets from Vol En Avion through our reservation call center will be non-refundable.</p>
+</div>
+    </div>
+  </div>
+</div>
+
+        </div>
+
+
+							
+<style>
+   footer {
+    height: 21%;
+	border: 3px solid #4A235A;
+	}
+    </style>
+    <footer role="contentinfo" data-ng-cloak data-vx-common-footer>
+        <div bindonce class="wrap wrap--narrow">
+            <div class="footer-wrap" ng-switch="footer.breakpoint">
+                <div data-ng-cloak ng-switch-when="small">
+                    <nav class="footer-nav cf">
+                       
+                        <div class="footer-copy">
+                            <div class="footer-copy__external-link-policy">
+                                <span  is-external="true"></span> This indicates a link to an external site that may not follow the same accessibility policies.
+                            </div>
+                            <div class="footer-copy__copyright">
+                                &copy; <span bo-text="footer.year | date:'yyyy'"></span>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div data-ng-cloak ng-switch-when="medium">
+                   
+                </div>
+                <nav class="footer-nav cf" ng-switch-when="large">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a href="sitemap.html" target="_self">Sitemap</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="Contact Us.html" target="_self">Contact Us</a>
+                        </li>
+                       
+                    </ul>
+                    
+                       
+                 
+                    <ul class="footer-nav__list">
+                       
+                        <li class="footer-nav__item">
+                            <a href="accessibility-services.html" target="_self">Accessibility Services</a>
+                        </li>
+                        <li class="footer-nav__item">
+                           <a href="guide.html" target="_self"  >Travel Guide</a>
+                        </li>
+						</ul>
+                    <ul class="footer-nav__list">
+                        
+                        <li class="footer-nav__item">
+                            <a href="terms.html" target="_self">Terms &amp; Conditions</a>
+                        </li>
+						 <li class="footer-nav__item">
+                            <a href="where.html" target="_self">Destinations</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="footer-nav__list">
+                        
+                       
+                       
+                        <li class="footer-nav__item">
+                            <a href="Privacy.html" target="_self">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-nav__list" style="text-align:right;">
+                        <li class="footer__socisal-icon-header" vx-common-link is-external="true">Follow us</li><br>
+                        <li class="footer__social-icon-header">
+                            <a href="https://www.facebook.com/" target="_self" >
+								<img src="fb.png" style="width:42px;height:42px;border:0;>
+                                
+                            </a>
+                        </li>
+			
+                        <li class="footer__social-icon-header">
+                            <a href="https://twitter.com/" target="_self" >
+                                <img src="twitter.png" style="width:42px;height:42px;border:0;>
+                            </a>
+                        </li>
+                       
+                        <li class="footer__social-icon-header">
+                            <a href="https://www.instagram.com/" target="_self" >
+                                <img src="insta.png" style="width:42px;height:42px;border:0;>
+                            </a>
+                        </li>
+                       
+                        <li class="footer-copy">
+                            
+                            
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+   
+
+
+    <script src="j4.js"></script>
+    
+
+</body>
+
+</html>

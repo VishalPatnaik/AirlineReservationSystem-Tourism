@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="default.css"/>
+		<script type="text/javascript" src="script.js"></script> 
+    </head>
+    <body>   
+	
+        <form action="process.php" class="register" method="POST">
+            <h1>Book My Flight</h1>
+			<center><span >TIME: - </span>
+ <span display:table" id="clock">
+
+		
+		<script type="text/javascript">
+			var lastText = "";
+			
+			function updateClock() {
+				var d = new Date();
+				var s = "";
+				s += (10 > d.getHours()   ? "0" : "") + d.getHours()   + ":"
+				s += (10 > d.getMinutes() ? "0" : "") + d.getMinutes() + ":"
+				s += (10 > d.getSeconds() ? "0" : "") + d.getSeconds();
+				
+				if (lastText != s) {
+					setText("clock", s);
+					lastText = s;
+				}
+				
+			}
+			
+			function setText(elemName, text) {
+				var elem = document.getElementById(elemName);
+				while (elem.childNodes.length > 0)
+					elem.removeChild(elem.firstChild);
+				elem.appendChild(document.createTextNode(text));
+			}
+			
+			updateClock();
+			setInterval(updateClock,100);
+		</script>
+<script language="JavaScript" type="text/javascript">
+ var d=new Date();
+var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December"); 
+
+var TODAY =d.getDate() +"- " + monthname[d.getMonth()] + "-" + d.getFullYear();
+
+ document.write(TODAY);
+</script>
+</span></center>
+			<fieldset class="row1">
+                <legend>Travel Information</legend>
+				<p>
+                    <label>FlightID
+                    </label>
+					<input name="flightID" required="required" type="text"/>
+                    <label>Date of journey  (2018)*
+                    </label>
+                    <select class="date" name="day">
+                        <option value="">Date
+						</option>
+                        <option value="1">01
+                        </option>
+                        <option value="2">02
+                        </option>
+                        <option value="3">03
+                        </option>
+                        <option value="4">04
+                        </option>
+                        <option value="5">05
+                        </option>
+                        <option value="6">06
+                        </option>
+                        <option value="7">07
+                        </option>
+                        <option value="8">08
+                        </option>
+                        <option value="9">09
+                        </option>
+                        <option value="10">10
+                        </option>
+                        <option value="11">11
+                        </option>
+                        <option value="12">12
+                        </option>
+                        <option value="13">13
+                        </option>
+                        <option value="14">14
+                        </option>
+                        <option value="15">15
+                        </option>
+                        <option value="16">16
+                        </option>
+                        <option value="17">17
+                        </option>
+                        <option value="18">18
+                        </option>
+                        <option value="19">19
+                        </option>
+                        <option value="20">20
+                        </option>
+                        <option value="21">21
+                        </option>
+                        <option value="22">22
+                        </option>
+                        <option value="23">23
+                        </option>
+                        <option value="24">24
+                        </option>
+                        <option value="25">25
+                        </option>
+                        <option value="26">26
+                        </option>
+                        <option value="27">27
+                        </option>
+                        <option value="28">28
+                        </option>
+                        <option value="29">29
+                        </option>
+                        <option value="30">30
+                        </option>
+                        <option value="31">31
+                        </option>
+                    </select>
+                    <select name="month">
+					<option value="">Month
+                        </option>
+                        <option value="January">January
+                        </option>
+                        <option value="February">February
+                        </option>
+                        <option value="March">March
+                        </option>
+                        <option value="April">April
+                        </option>
+                        <option value="May">May
+                        </option>
+                        <option value="June">June
+                        </option>
+                        <option value="July">July
+                        </option>
+                        <option value="August">August
+                        </option>
+                        <option value="September">September
+                        </option>
+                        <option value="October">October
+                        </option>
+                        <option value="November">November
+                        </option>
+                        <option value="December">December
+                        </option>
+                    </select>	
+
+					
+					<label for="Class" title="Class of travel">Class of travel </label></dt>
+		                	<dd>
+		                        <select name="class" id="Class" class="span span20">
+														<option value="Economy">--Select Class--</option>
+														<option value="Economy">Economy</option>
+														<option value="Business">Business</option>
+														<option value="First">First</option>
+														<option value="Premium Economy">Premium Economy</option>
+													</select>
+
+		                    </dd>
+					
+                </p>
+                <p>
+					<label>Boarding From*
+                    </label>
+                                                <select name="source" required="required"><option value="">Select</option>
+<option value="ADK">Adak Island (ADK)</option>
+<option value="ABQ">Albuquerque (ABQ)</option>
+<option value="ANC">Anchorage (ANC)</option>
+<option value="ATL">Atlanta, GA (ATL)</option>
+<option value="AUS">Austin (AUS)</option>
+<option value="BWI">Baltimore-Baltimore Washington (BWI)</option>
+<option value="BRW">Barrow (BRW)</option>
+<option value="BLI">Bellingham (BLI)</option>
+<option value="RDM">Bend/Redmond, OR (RDM)</option>
+<option value="BET">Bethel (BET)</option>
+<option value="BIL">Billings (BIL)</option>
+<option value="BOI">Boise (BOI)</option>
+<option value="BOS">Boston (BOS)</option>
+<option value="BZN">Bozeman (BZN)</option>
+<option value="BUR">Burbank (BUR)</option>
+<option value="SJD">Cabo San Lucas (SJD)</option>
+<option value="YYC">Calgary (YYC)</option>
+<option value="CUN">Cancun (CUN)</option>
+<option value="CHS">Charleston, SC (CHS)</option>
+<option value="ORD">Chicago-O&#39;Hare (ORD)</option>
+<option value="COS">Colorado Springs (COS)</option>
+<option value="CDV">Cordova (CDV)</option>
+<option value="CEC">Crescent City (CEC)</option>
+<option value="DAL">Dallas (DAL)</option>
+<option value="DFW">Dallas-Ft. Worth, TX (DFW)</option>
+<option value="DEN">Denver (DEN)</option>
+<option value="DTW">Detroit (DTW)</option>
+<option value="DLG">Dillingham (DLG)</option>
+<option value="DUT">Dutch Harbor (DUT)</option>
+<option value="YEG">Edmonton (YEG)</option>
+<option value="EUG">Eugene (EUG)</option>
+<option value="FAI">Fairbanks (FAI)</option>
+<option value="FLL">Fort Lauderdale (FLL)</option>
+<option value="FAT">Fresno/Yosemite (FAT)</option>
+<option value="GST">Glacier Bay/Gustavus (GST)</option>
+<option value="GTF">Great Falls (GTF)</option>
+<option value="GDL">Guadalajara (GDL)</option>
+<option value="HAV">Havana (HAV)</option>
+<option value="HLN">Helena (HLN)</option>
+<option value="HNL">Honolulu (HNL)</option>
+<option value="IAH">Houston, TX (IAH)</option>
+<option value="IND">Indianapolis (IND)</option>
+<option value="ZIH">Ixtapa/Zihuatanejo (ZIH)</option>
+<option value="JNU">Juneau (JNU)</option>
+<option value="OGG">Kahului/Maui (OGG)</option>
+<option value="KOA">Kailua/Kona (KOA)</option>
+<option value="FCA">Kalispell (FCA)</option>
+<option value="MCI">Kansas City (MCI)</option>
+<option value="YLW">Kelowna (YLW)</option>
+<option value="PSC">Kennewick/Pasco (PSC)</option>
+<option value="KTN">Ketchikan (KTN)</option>
+<option value="AKN">King Salmon (AKN)</option>
+<option value="ADQ">Kodiak (ADQ)</option>
+<option value="OTZ">Kotzebue (OTZ)</option>
+<option value="LAS">Las Vegas (LAS)</option>
+<option value="LWS">Lewiston (LWS)</option>
+<option value="LIR">Liberia (LIR)</option>
+<option value="LIH">Lihue (LIH)</option>
+<option value="LTO">Loreto (LTO)</option>
+<option value="LAX">Los Angeles, CA (LAX)</option>
+<option value="SJD">Los Cabos (SJD)</option>
+<option value="MMH">Mammoth Lakes/Yosemite (MMH)</option>
+<option value="ZLO">Manzanillo (ZLO)</option>
+<option value="MZT">Mazatlan (MZT)</option>
+<option value="MFR">Medford (MFR)</option>
+<option value="MEX">Mexico City (MEX)</option>
+<option value="MKE">Milwaukee (MKE)</option>
+<option value="MSP">Minneapolis (MSP)</option>
+<option value="MSO">Missoula (MSO)</option>
+<option value="MRY">Monterey (MRY)</option>
+<option value="PUW">Moscow, ID/Pullman, WA (PUW)</option>
+<option value="BNA">Nashville (BNA)</option>
+<option value="MSY">New Orleans (MSY)</option>
+<option value="JFK">New York-Kennedy (JFK)</option>
+<option value="LGA">New York-LaGuardia (LGA)</option>
+<option value="EWR">Newark-Newark Intl. (EWR)</option>
+<option value="OME">Nome (OME)</option>
+<option value="OAK">Oakland (OAK)</option>
+<option value="OKC">Oklahoma City (OKC)</option>
+<option value="OMA">Omaha (OMA)</option>
+<option value="ONT">Ontario, CA, US (ONT)</option>
+<option value="SNA">Orange County/Santa Ana (SNA)</option>
+<option value="MCO">Orlando (MCO)</option>
+<option value="PSP">Palm Springs (PSP)</option>
+<option value="PSC">Pasco/Kennewick (PSC)</option>
+<option value="PSG">Petersburg (PSG)</option>
+<option value="PHL">Philadelphia (PHL)</option>
+<option value="PHX">Phoenix (PHX)</option>
+<option value="PIT">Pittsburgh (PIT)</option>
+<option value="PDX">Portland, OR (PDX)</option>
+<option value="SCC">Prudhoe Bay (SCC)</option>
+<option value="PVR">Puerto Vallarta (PVR)</option>
+<option value="PUW">Pullman, WA/Moscow, ID (PUW)</option>
+<option value="RDU">Raleigh (RDU)</option>
+<option value="RDM">Redmond/Bend, OR (RDM)</option>
+<option value="RNO">Reno (RNO)</option>
+<option value="PVR">Riviera Nayarit (PVR)</option>
+<option value="SMF">Sacramento (SMF)</option>
+<option value="SLC">Salt Lake City (SLC)</option>
+<option value="SAT">San Antonio (SAT)</option>
+<option value="SAN">San Diego (SAN)</option>
+<option value="SFO">San Francisco (SFO)</option>
+<option value="SJD">San Jose del Cabo (SJD)</option>
+<option value="SJC">San Jose, CA (SJC)</option>
+<option value="SJO">San Jose, CR (SJO)</option>
+<option value="SBP">San Luis Obispo (SBP)</option>
+<option value="SNA">Santa Ana/Orange County (SNA)</option>
+<option value="SBA">Santa Barbara (SBA)</option>
+<option value="STS">Santa Rosa/Sonoma County (STS)</option>
+<option value="SEA">Seattle (SEA)</option>
+<option value="SIT">Sitka (SIT)</option>
+<option value="STS">Sonoma County/Santa Rosa (STS)</option>
+<option value="GEG">Spokane (GEG)</option>
+<option value="STL">St. Louis (STL)</option>
+<option value="HDN">Steamboat Springs (HDN)</option>
+<option value="SUN">Sun Valley (SUN)</option>
+<option value="TPA">Tampa (TPA)</option>
+<option value="TUS">Tucson (TUS)</option>
+<option value="YVR">Vancouver, BC (YVR)</option>
+<option value="YYJ">Victoria (YYJ)</option>
+<option value="ALW">Walla Walla (ALW)</option>
+<option value="IAD">Washington, DC-Dulles (IAD)</option>
+<option value="DCA">Washington, DC-Reagan National (DCA)</option>
+<option value="EAT">Wenatchee (EAT)</option>
+<option value="ICT">Wichita (ICT)</option>
+<option value="WRG">Wrangell (WRG)</option>
+<option value="YKM">Yakima (YKM)</option>
+<option value="YAK">Yakutat (YAK)</option>
+</select>
+					<label>To *
+                    </label>
+					                            <select name="destination" required="required">
+												<option value="">Select</option>
+<option value="ADK">Adak Island (ADK)</option>
+<option value="ABQ">Albuquerque (ABQ)</option>
+<option value="ANC">Anchorage (ANC)</option>
+<option value="ATL">Atlanta, GA (ATL)</option>
+<option value="AUS">Austin (AUS)</option>
+<option value="BWI">Baltimore-Baltimore Washington (BWI)</option>
+<option value="BRW">Barrow (BRW)</option>
+<option value="BLI">Bellingham (BLI)</option>
+<option value="RDM">Bend/Redmond, OR (RDM)</option>
+<option value="BET">Bethel (BET)</option>
+<option value="BIL">Billings (BIL)</option>
+<option value="BOI">Boise (BOI)</option>
+<option value="BOS">Boston (BOS)</option>
+<option value="BZN">Bozeman (BZN)</option>
+<option value="BUR">Burbank (BUR)</option>
+<option value="SJD">Cabo San Lucas (SJD)</option>
+<option value="YYC">Calgary (YYC)</option>
+<option value="CUN">Cancun (CUN)</option>
+<option value="CHS">Charleston, SC (CHS)</option>
+<option value="ORD">Chicago-O&#39;Hare (ORD)</option>
+<option value="COS">Colorado Springs (COS)</option>
+<option value="CDV">Cordova (CDV)</option>
+<option value="CEC">Crescent City (CEC)</option>
+<option value="DAL">Dallas (DAL)</option>
+<option value="DFW">Dallas-Ft. Worth, TX (DFW)</option>
+<option value="DEN">Denver (DEN)</option>
+<option value="DTW">Detroit (DTW)</option>
+<option value="DLG">Dillingham (DLG)</option>
+<option value="DUT">Dutch Harbor (DUT)</option>
+<option value="YEG">Edmonton (YEG)</option>
+<option value="EUG">Eugene (EUG)</option>
+<option value="FAI">Fairbanks (FAI)</option>
+<option value="FLL">Fort Lauderdale (FLL)</option>
+<option value="FAT">Fresno/Yosemite (FAT)</option>
+<option value="GST">Glacier Bay/Gustavus (GST)</option>
+<option value="GTF">Great Falls (GTF)</option>
+<option value="GDL">Guadalajara (GDL)</option>
+<option value="HAV">Havana (HAV)</option>
+<option value="HLN">Helena (HLN)</option>
+<option value="HNL">Honolulu (HNL)</option>
+<option value="IAH">Houston, TX (IAH)</option>
+<option value="IND">Indianapolis (IND)</option>
+<option value="ZIH">Ixtapa/Zihuatanejo (ZIH)</option>
+<option value="JNU">Juneau (JNU)</option>
+<option value="OGG">Kahului/Maui (OGG)</option>
+<option value="KOA">Kailua/Kona (KOA)</option>
+<option value="FCA">Kalispell (FCA)</option>
+<option value="MCI">Kansas City (MCI)</option>
+<option value="YLW">Kelowna (YLW)</option>
+<option value="PSC">Kennewick/Pasco (PSC)</option>
+<option value="KTN">Ketchikan (KTN)</option>
+<option value="AKN">King Salmon (AKN)</option>
+<option value="ADQ">Kodiak (ADQ)</option>
+<option value="OTZ">Kotzebue (OTZ)</option>
+<option value="LAS">Las Vegas (LAS)</option>
+<option value="LWS">Lewiston (LWS)</option>
+<option value="LIR">Liberia (LIR)</option>
+<option value="LIH">Lihue (LIH)</option>
+<option value="LTO">Loreto (LTO)</option>
+<option value="LAX">Los Angeles, CA (LAX)</option>
+<option value="SJD">Los Cabos (SJD)</option>
+<option value="MMH">Mammoth Lakes/Yosemite (MMH)</option>
+<option value="ZLO">Manzanillo (ZLO)</option>
+<option value="MZT">Mazatlan (MZT)</option>
+<option value="MFR">Medford (MFR)</option>
+<option value="MEX">Mexico City (MEX)</option>
+<option value="MKE">Milwaukee (MKE)</option>
+<option value="MSP">Minneapolis (MSP)</option>
+<option value="MSO">Missoula (MSO)</option>
+<option value="MRY">Monterey (MRY)</option>
+<option value="PUW">Moscow, ID/Pullman, WA (PUW)</option>
+<option value="BNA">Nashville (BNA)</option>
+<option value="MSY">New Orleans (MSY)</option>
+<option value="JFK">New York-Kennedy (JFK)</option>
+<option value="LGA">New York-LaGuardia (LGA)</option>
+<option value="EWR">Newark-Newark Intl. (EWR)</option>
+<option value="OME">Nome (OME)</option>
+<option value="OAK">Oakland (OAK)</option>
+<option value="OKC">Oklahoma City (OKC)</option>
+<option value="OMA">Omaha (OMA)</option>
+<option value="ONT">Ontario, CA, US (ONT)</option>
+<option value="SNA">Orange County/Santa Ana (SNA)</option>
+<option value="MCO">Orlando (MCO)</option>
+<option value="PSP">Palm Springs (PSP)</option>
+<option value="PSC">Pasco/Kennewick (PSC)</option>
+<option value="PSG">Petersburg (PSG)</option>
+<option value="PHL">Philadelphia (PHL)</option>
+<option value="PHX">Phoenix (PHX)</option>
+<option value="PIT">Pittsburgh (PIT)</option>
+<option value="PDX">Portland, OR (PDX)</option>
+<option value="SCC">Prudhoe Bay (SCC)</option>
+<option value="PVR">Puerto Vallarta (PVR)</option>
+<option value="PUW">Pullman, WA/Moscow, ID (PUW)</option>
+<option value="RDU">Raleigh (RDU)</option>
+<option value="RDM">Redmond/Bend, OR (RDM)</option>
+<option value="RNO">Reno (RNO)</option>
+<option value="PVR">Riviera Nayarit (PVR)</option>
+<option value="SMF">Sacramento (SMF)</option>
+<option value="SLC">Salt Lake City (SLC)</option>
+<option value="SAT">San Antonio (SAT)</option>
+<option value="SAN">San Diego (SAN)</option>
+<option value="SFO">San Francisco (SFO)</option>
+<option value="SJD">San Jose del Cabo (SJD)</option>
+<option value="SJC">San Jose, CA (SJC)</option>
+<option value="SJO">San Jose, CR (SJO)</option>
+<option value="SBP">San Luis Obispo (SBP)</option>
+<option value="SNA">Santa Ana/Orange County (SNA)</option>
+<option value="SBA">Santa Barbara (SBA)</option>
+<option value="STS">Santa Rosa/Sonoma County (STS)</option>
+<option value="SEA">Seattle (SEA)</option>
+<option value="SIT">Sitka (SIT)</option>
+<option value="STS">Sonoma County/Santa Rosa (STS)</option>
+<option value="GEG">Spokane (GEG)</option>
+<option value="STL">St. Louis (STL)</option>
+<option value="HDN">Steamboat Springs (HDN)</option>
+<option value="SUN">Sun Valley (SUN)</option>
+<option value="TPA">Tampa (TPA)</option>
+<option value="TUS">Tucson (TUS)</option>
+<option value="YVR">Vancouver, BC (YVR)</option>
+<option value="YYJ">Victoria (YYJ)</option>
+<option value="ALW">Walla Walla (ALW)</option>
+<option value="IAD">Washington, DC-Dulles (IAD)</option>
+<option value="DCA">Washington, DC-Reagan National (DCA)</option>
+<option value="EAT">Wenatchee (EAT)</option>
+<option value="ICT">Wichita (ICT)</option>
+<option value="WRG">Wrangell (WRG)</option>
+<option value="YKM">Yakima (YKM)</option>
+<option value="YAK">Yakutat (YAK)</option>
+</select>
+					
+                </p>
+                <p>
+                    <label>Mobile *
+                    </label>
+<input type="text" value=""   maxlength="10"  placeholder="Phone : Mobile" pattern="[0-9]{10}"  required autocomplete="on" ID="Mob" name="mob">
+                    <label>Repeat Mobile*
+                    </label>
+<input type="text" value=""   maxlength="10"  placeholder="Phone : Mobile" pattern="[0-9]{10}"  required autocomplete="on" ID="Mob" name="mob">
+                    <h4>(Ticket No. will be directly sent to this number only after the successful payment. )</h4>
+                   
+                </p>
+				<div class="clear"></div>
+            </fieldset>
+            <fieldset class="row2">
+				<legend>Passenger Details</legend>
+				
+               <table id="dataTable" class="form" border="1">
+                  <tbody>
+                    <tr>
+                      <p>
+						
+						<td>
+							<label>Name</label>
+							<input type="text" required="required" name="BX_NAME">
+						 </td>
+						 <td>
+							<label for="BX_age">Age</label>
+							<input type="text" required="required" class="small"  name="BX_age">
+					     </td>
+						 <td>
+							<label for="BX_gender">Gender</label>
+							<select id="BX_gender" name="BX_gender" required="required">
+								<option>....</option>
+								<option value="M">Male</option>
+								<option value="F">Female</option>
+							</select>
+						 </td>
+						
+							</p>
+                    </tr>
+                    </tbody>
+                </table>
+				<div class="clear"></div>
+            </fieldset>
+            <fieldset class="row3">
+                <legend>Further Information</legend>
+				<p>The identification details are required during journey. One of the passenger booked on the ticket should have any of the identity cards ( Passport / PAN Card / Driving License / Photo ID card issued by Central / State Govt / Student Identity Card with photograph) during the journey in original. </p>
+				
+				<div class="clear"></div>
+            </fieldset>
+            <fieldset class="row4">
+                <legend>Terms and Mailing</legend>
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>*  I accept the <a href="terms.html">Terms and Conditions</a></label>
+                </p>
+                
+				<div class="clear"></div>
+            </fieldset>
+			<input class="submit" type="submit" value="Confirm &raquo;" />
+			<a class="submit" href="home.html"/>Back to Vol En Avion</a>
+			
+			<div class="clear"></div>
+        </form>
+		
+    </body>
+	
+</html>
+
+
+
+
+

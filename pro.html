@@ -1,0 +1,77 @@
+
+<!doctype html>
+
+<head>
+  
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main1.css">
+    <link rel="stylesheet" type="text/css" href="F46CEEC11A6E3A62A.css">
+
+   
+    <link rel="mask-icon" sizes="any" href="favicon.svg" color="#df173b">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+
+   
+    
+   
+
+ 
+    <script src="j2.js"></script>
+
+
+</head>
+<body ng-controller="CoreCtrl" data-vx-common-window >
+
+    <div data-vx-common-app-overlay class="app-overlay"></div>
+
+    <div id="travel-advisory" data-vx-common-travel-advisory></div>
+
+    <div id="change-guider" data-vx-common-change-guider></div>
+
+    <header data-ng-cloak data-vx-common-header role="banner" class="banner" ng-class="{'is-nav-expanded-active': header.dropdown.navActive, 'is-nav-elevate-active': header.elevateLogin}" ng-show="header.visible">
+         
+        <nav class="navbar__main cf">
+		<ul class="navlist--main cf" ng-hide="header.breakpoint === 'small'">
+                <li><a href="profile.html" target="_self">Profile</a></li>
+                
+            </ul>
+            <ul class="navlist--main cf" ng-hide="header.breakpoint === 'small'">
+                <li><a href="flight1.html" target="_self">Book</a></li>
+                <li><a href="manage1.html"  target="_self">Manage</a></li>
+            </ul>
+            <ul class="navlist--sub cf" ng-hide="header.breakpoint === 'small' || header.breakpoint === 'medium'">
+                
+              
+               <li><a href="guide1.html" target="_self">Tourist Guide</a></li> 
+            </ul>
+			<div class="navbar__right cf">
+                
+                <div class="navbar__elevate-nav" ng-switch="header.mustShowElevateTicker">
+                    <span class="elevate-nav--logged-out cf" ng-switch-when="false">
+                        <a href="signout.php" class="elevate-nav__link elevate-nav__link--sign-in icon-elevate-small" data-vx-e2e-header-signin="" target="_self">Sign Out</a>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+			
+        </nav>
+       
+  
+</header>
+</div>
+</div>
+</div>
+
+
+							
+
+
+
+    <script src="j4.js"></script>
+    
+
+</body>
+
+</html>

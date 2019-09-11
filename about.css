@@ -1,0 +1,251 @@
+      img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+/*---------------=====================bodystyles===================----------------*/
+      body{
+        height: 100%;
+        font-family: Open Sans, Arial, Helvetica, sans-serif;
+        overflow-x: hidden;
+            padding: 0px;
+            margin: 0px;
+            color: #444;
+            letter-spacing: 0;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 13px;
+            line-height: 1.3em;
+      }
+
+        div{
+            margin: 0;
+            padding:0;
+            direction: ltr;
+            display: block;
+        }
+/*-------------===========header==============------------------*/
+      .header{
+        background-color: #8B0000;
+        height: 135px;
+        border-bottom: 1px solid grey;
+      }
+
+      .navbar-brand img{
+        width: 100%;
+        height: 100px;
+      }
+
+      .header{
+    height: 130px;
+    background-color: #8B0000;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}     
+.header .navbar ul{
+    margin-top:40px;
+    background-color:#8B0000;   
+    z-index: 990;
+    position: relative;
+}
+.header .navbar ul li a{
+    color:#fff;
+    padding: 5px 15px;
+    font-family: Droid Serif;
+    
+}
+.header .navbar ul li a:hover{
+    background: none;
+    color: #fff;
+}
+
+.icon{
+    background-color: #55646F;
+    border: 1px solid grey;
+    border-radius: 1px solid grey;
+}
+
+.nav-bar div > ul > li.Nav > a{
+   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15) inset;
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15) inset;
+ box-shadow: 0 1px 1px rgba(0,0,0,0.15) inset;
+}
+
+.nav-bar div > ul > li.Nav > a {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: url(../images/black_20_bg.png);
+}
+
+/*---------===============image==============------------*/
+.featured-content {
+  position: relative;
+  overflow: hidden;
+    background: url(../images/site_bg.jpg);
+}
+.substrate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.substrate img 
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.fullwidth {
+    display: block;
+    padding: 0!important;
+    width: 100%!important;
+    height: auto;
+}
+.row {
+    margin: 0 auto;
+    width: 1140px;
+}
+
+.page-title {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding: 1.6em 0;
+    color: #fff;
+}
+
+.featured-content h1 {
+    margin-bottom: 0.7em;
+    font-size: 2em;
+	text-align:center;
+}
+.nomargin {
+    margin: 0!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Droid Serif;
+    line-height: 1.5em;
+}
+
+
+.nav-bar ul li {
+  text-decoration: none;
+
+}
+
+.nav-bar li {
+  list-style-type: none;
+  display: inline;
+}
+
+.nav-bar li a{
+  text-decoration: none;
+  padding-left:5px;
+  color: #fff;
+  font-family: Droid Serif;
+}
+
+
+
+.tabs-left {
+  border-bottom: none;
+  padding-top: 2px;
+}
+.tabs-left {
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left>li, .tabs-right>li {
+  float: none;
+  margin-bottom: 2px;
+}
+.tabs-left>li {
+  margin-right: -1px;
+}
+
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: #ddd;
+  border-right-color: transparent;
+}
+
+
+.tabs-left>li>a {
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+  display:block;
+}
+
+.rownav {
+  width: 100%;
+  margin-top: 40px;
+
+}
+
+.col{
+  width: 100%;
+  height: 100%;
+}
+
+.nav-tabs li a{
+  color:#8b0000;
+  font-family: Droid Serif ;
+  font-weight: 600;
+  font-style: Text Body;
+  
+  color: #6a6666;
+}
+.tab-pane h1{
+  font-family: Droid Serif ;
+font-style: Text Body;
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.tab-pane p{
+  
+  margin-bottom: 10px;
+    font-weight: normal;
+    font-family:  Open Sans,Arial,Helvetica,sans-serif;
+    line-height: 1.5em;
+    text-align: justify;
+    font-size: 16.5px;
+color: #6a6666;
+
+}
+.tab-content{
+  width: 100%;
+  float:right;
+}
+
+
+.tab-content{
+  position: relative;
+  bottom: 15px;
+}
+.nav-bar li a:hover{
+  color: lightblue;
+
+}
+
+
+.copyright {
+  font-family: Driod Serif;
+}

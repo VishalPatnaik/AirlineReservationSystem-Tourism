@@ -1,0 +1,11 @@
+<?php
+$con=mysqli_connect("localhost","root","cse") or die(mysqli_error());
+$c=mysqli_select_db($con,"cse") or die(mysqli_error());
+?>
+	<script>
+	alert("MAIL SENT SUCCESSFULLY");
+	document.location="guide.html";
+	</script>
+	<?php
+mysqli_close($con);
+?>
